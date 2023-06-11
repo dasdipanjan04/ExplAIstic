@@ -199,8 +199,8 @@ section .footer-page3 {
         position: absolute;
         top: 10px;
         width: 117px;
-        margin-top: 0px;
-        right: 11px;
+        margin-top: 15px;
+        right: 21px;
         border: none;
         height: 36px;
         text-align: center;
