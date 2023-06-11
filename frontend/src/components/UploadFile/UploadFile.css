@@ -75,6 +75,9 @@ section::before{
     /* margin-left: 20px !important; */
     /* z-index: 0; */
 }
+.btn-style-page1:hover{
+    background-color: hsl(183, 40%, 25%);;
+}
 section .footer-page1 {
     position: relative;
     z-index: 1;
