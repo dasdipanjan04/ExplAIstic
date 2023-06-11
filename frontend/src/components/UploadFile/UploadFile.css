@@ -95,14 +95,11 @@ section .footer-page1 {
     box-shadow: 0 0 10px inset rgb(80, 80, 80);
 }
 .steps{
-    /* margin-top: -50px; */
     font-size: 30px;
     margin-bottom: 20px !important;
 }
 .label{
     font-size: 20px;
-    /* margin-bottom: -30px !important; */
-    /* margin-left: 20px; */
 }
 .label-page1 span {
     font-size: 16px;
@@ -112,12 +109,6 @@ section .footer-page1 {
     color: red;
     padding: 20px;
 }
-/* .innerContent input{
-    margin-top: -70px !important;
-    border: none;
-    font-size: 16px;
-    color: #000;
-}  */
 .context-page1{
     border: none;
     width: 100%;
@@ -183,21 +174,14 @@ section .footer-page1 {
 
 }
 .images-page1{
- 
-    /* right:0px; */
     position: absolute;
     width: 50%;
     height: 100%;
     display: flex;
     right: -90px;
     top:0;
-    
-
+    transform: scale(0.9);
 }
-
-
-
-
 .drop-file-input__label {
     text-align: center;
     color: #B6B6B6;
@@ -265,6 +249,12 @@ section .footer-page1 {
     opacity: 1;
 }
 
+@media only screen and (max-width:1060px){
+    .images-page1{
+        transform: scale(0.8);
+    }
+}
+
 @media only screen and (max-width:870px) {
     .context-page1{
         width:500px;
@@ -297,6 +287,29 @@ section .footer-page1 {
     .btn-style-page1{
         width: 80%;
         margin-left: 30px !important;
+    }
+}
+@media only screen and (max-width:830px){
+    .steps{
+        font-size: 1.3rem;
+        margin-bottom: 5px !important;
+    }
+    .label{
+        font-size: 15px;
+    }
+    .context-page1{
+        margin-bottom: 15px !important;
+    }
+    .images-page1{
+        right: -90px;
+    }
+    .images-page1 svg{
+        transform: scale(0.7);
+    }
+}
+@media only screen and (max-width:650px){
+    .images-page1 svg{
+        transform: scaleY(1);
     }
 }
 @media only screen and (max-width:550px){
@@ -352,8 +365,5 @@ section .footer-page1 {
         width: 250px;
         margin-left: 22px;
     }
-    /* .drop-file-input__label i {
-        width: 20px;
-    } */
 
 }
