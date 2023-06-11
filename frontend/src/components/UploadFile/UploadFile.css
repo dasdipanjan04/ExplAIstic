@@ -1,7 +1,9 @@
-
-body{
+*{
     margin:0;
     padding:0;
+}
+body{
+    
     box-sizing: border-box;
     /* overflow: hidden; */
 }
@@ -76,7 +78,7 @@ section::before{
     /* z-index: 0; */
 }
 .btn-style-page1:hover{
-    background-color: hsl(183, 40%, 25%);;
+    background-color: hsl(183, 40%, 25%);
 }
 section .footer-page1 {
     position: relative;
