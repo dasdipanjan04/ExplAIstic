@@ -370,3 +370,19 @@ section .footer-page1 {
     }
 
 }
+
+@media screen and (max-width: 500px)
+{
+    .content-page1{
+        margin-inline: auto;
+    }
+    .images-page1{
+        right: 0;
+        top: 27%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .images-page1 svg{
+        transform: scale(1);
+    }
+}
