@@ -3,11 +3,7 @@
     padding:0;
 }
 body{
-    
     box-sizing: border-box;
-    /* overflow: hidden; */
-    
-    
 }
 .header-page2{
     display: flex;
@@ -43,7 +39,6 @@ section::before{
     background: #E9A9CC;
     border-radius:50% 50% 0 0 /100% 100% 0 0 ;
     transform: scaleX(1.5);
-    /* overflow-x: hidden; */
 }
 .content-page2{
     margin-top: 0px;
@@ -57,15 +52,10 @@ section::before{
 .innerContent-page2{
     width: 550px;
     height: auto;
-    /* position: absolute; */
     position: relative;
-    /* font-size: 70px; */
     font-weight: 600;
     margin: 40px auto auto 50px;
     color: #1C4042;
-    /* max-height: 600px; */
-    /* border:1px solid red; */
-    /* overflow-y: auto; */
 }
 
 .innerContent-page2 span{
@@ -85,18 +75,15 @@ section::before{
 
 
 .captionSize-icons{
-    /* margin-top: -20px; */
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     cursor: pointer;
 }
 .captionStyle-icons{
-    /* width: 450px; */
     margin-bottom: 40px;
     display: flex;
-    flex-wrap: wrap;/* 
-    justify-content: space-between; */
+    flex-wrap: wrap;
     gap:1rem;
     align-self:center;
 }
@@ -144,7 +131,6 @@ section::before{
     width: 250px;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     gap: 1rem;
     cursor: pointer;
 
@@ -168,7 +154,6 @@ section::before{
     font-size: 30px;
     font-weight: 500;
     color: #fff;
-    /* z-index: 0; */
 }
 .btn-style-page2:hover{
     background-color: hsl(183, 40%, 25%);
@@ -240,14 +225,10 @@ section .footer-page2 {
   
     .steps{
         font-size: 25px !important;
-        /* margin: 40px 20px 20px 0px !important; */
     }
    .innerContent-page2{
-    /* position: absolute; */
     margin: 40px 40px auto 40px;
     width: auto;
-    /* margin: auto !important; */
-    /* width: fit-content; */
    }
    
    .captionSize-icons{
@@ -256,11 +237,6 @@ section .footer-page2 {
     justify-content: space-between;
     align-items: baseline;
 }
-/* .captionStyle-icons{
-    width: 400px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-} */
 .captionStyle{
     margin-bottom: 10px;
 }
@@ -328,11 +304,8 @@ height: 40px;
         margin: 20px 20px 20px 0px !important;
     }
    .innerContent-page2{
-    /* position: absolute; */
     margin: 20px 20px auto 20px;
     width: auto;
-    /* margin: auto !important; */
-    /* width: fit-content; */
    }
    
    .captionSize-icons{
@@ -345,10 +318,6 @@ height: 40px;
     width:140px;
 }
 
-/* .captionStyle-icons{
-    width: auto;
-    flex-wrap:wrap;
-} */
 .captionStyle{
     margin-bottom: 10px;
 }
@@ -356,8 +325,6 @@ height: 40px;
     font-size: 15px;
     width: 30px;
     height: 30px;
- 
-    /* padding: 10px; */
 }
 
 .medium{
@@ -387,9 +354,7 @@ height: 40px;
 }
 
 .socialHandle-icons{
-    width: 140px;/* 
-    display: flex;
-    flex-wrap: wrap; */
+    width: 140px;
 }
 .preffered-platform{
     position: relative;
@@ -429,14 +394,12 @@ height: 40px;
     }
 
     .innerContent-page2{
-    /* width: 550px; */
     height: 76%;
     position: relative;
     font-size: 70px;
     font-weight: 600;
     margin: 20px 20px auto 40px;
     color: #1C4042;
-    /* border: 2px solid red; */
     max-height: 575px;
     overflow-y: auto;
 }

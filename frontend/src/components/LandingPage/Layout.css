@@ -77,7 +77,6 @@ section::before{
 .innerContent{
     width: 450px;
     padding: 0.5rem;
-    /* height: 500px; */
     font-size: 60px;
     font-weight: 600;
     margin: 90px 100px auto;
@@ -99,7 +98,6 @@ section::before{
     font-size: 30px;
     font-weight: 500;
     color: #fff;
-    /* z-index: 0; */
 }
 .btn-style:hover{
     background-color: var(--muted-gray);
@@ -157,7 +155,6 @@ section .footer {
     }
     .innerContent{
         width:fit-content;
-        /* margin: auto; */
         font-size: 40px;
         margin: 20px 32px auto 37px;
     }

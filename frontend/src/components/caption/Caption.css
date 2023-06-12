@@ -41,7 +41,6 @@ section::before{
     background: #E9A9CC;
     border-radius:50% 50% 0 0 /100% 100% 0 0 ;
     transform: scaleX(1.5);
-    /* overflow-x: hidden; */
 }
 .content-page3{
     margin-top: 0px;
@@ -55,12 +54,9 @@ section::before{
 .innerContent-page3{
     width: 900px;
     height: 86%;
-    /* font-size: 60px; */
-    /* font-weight: 600; */
     position: absolute;
     top:10px;
     right:2%;
-    /* margin: 90px 100px auto; */
     color: #1C4042;
     
 
@@ -71,7 +67,6 @@ section::before{
     height: 90%;
     position: relative;
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
 
 }
@@ -99,8 +94,6 @@ textarea{
   
     width: 100%;
     font-size: 26px !important;
-    /* font-weight: 100; */
-    /* height: 500px; */
     border: none;
     height:100% !important;
     
@@ -136,11 +129,9 @@ textarea{
     border: none;
     background-color: #1C4042;
     border-radius:50px;
-    /* padding: 10px; */
     font-size: 30px;
     font-weight: 500;
     color: #fff;
-    /* z-index: 0; */
 }
 .btn-style-page3:hover{
     background-color: hsl(183, 40%, 25%);
@@ -152,10 +143,6 @@ section .footer-page3 {
     max-width: 900px;
     text-align: center;
 }
-/* image none */
-/* @media only screen and (max-width:1350px){
-
-} */
 .page3{
     position: absolute;
     width: 30% !important;

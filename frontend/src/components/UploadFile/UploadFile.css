@@ -3,9 +3,7 @@
     padding:0;
 }
 body{
-    
     box-sizing: border-box;
-    /* overflow: hidden; */
 }
 .header-page1{
     display: flex;
@@ -41,7 +39,6 @@ section::before{
     background: #E9A9CC;
     border-radius:50% 50% 0 0 /100% 100% 0 0 ;
     transform: scaleX(1.5);
-    /* overflow-x: hidden; */
 }
 .content-page1{
     margin-top: 0px;
@@ -55,7 +52,6 @@ section::before{
     position: relative;
     width: 33%;
     height:80%;
-    /* font-size: 70px; */
     font-weight: 600;
     margin: 20px auto auto 50px;
     color: #1C4042;
@@ -74,8 +70,6 @@ section::before{
     font-weight: 500;
     color: #fff;
     margin-top: 20px !important;
-    /* margin-left: 20px !important; */
-    /* z-index: 0; */
 }
 .btn-style-page1:hover{
     background-color: hsl(183, 40%, 25%);
@@ -117,11 +111,9 @@ section .footer-page1 {
 .context-page1{
     border: none;
     width: 100%;
-    /* padding-top: 20px; */
     margin-top: -30px;
     margin-left: -4px !important;
     font-size: 16px;
-    /* color: #B6B6B6; */
 }
 .content-page1::placeholder{
 
@@ -133,7 +125,6 @@ section .footer-page1 {
     padding: 0;
     border: none;
     height: 40px;
-    /* margin-left: 20px; */
 }
 .title{
     font-size: 25px;
@@ -145,7 +136,6 @@ section .footer-page1 {
 }
 .deleteBtn{
     border-radius: 20px;
-    /* margin-left: 20px; */
     background: #1C4042;
     color: white;
     cursor: pointer;
