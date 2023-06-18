@@ -116,7 +116,10 @@ section::before{
     background: #1C4042;
     color: #fff;
 } */
-
+#facebook img{
+    width: 50px;
+    height: 50px;
+}
 .tone{
     margin-bottom: 20px !important;
 }
