@@ -6,6 +6,7 @@ import ChooseCaptionPage from '../assets/characters/ChooseCaptionPage';
 import CaptionPage from '../assets/characters/CaptionPage';
 const Caption = () => {
     const {state} = useLocation();
+
   return (
 
     <>
@@ -45,7 +46,7 @@ const Caption = () => {
         <div className="footer-page3">
         </div>
         </section>
-        <CaptionPage></CaptionPage>
+        <CaptionPage path={state.file_path}></CaptionPage>
 
         
         

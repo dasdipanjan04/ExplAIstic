@@ -4,7 +4,7 @@ import "./card.css";
 import image from "./image.jpeg";
 //import logo from "./logo.jpg";
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div className="card-page">
         <div className="top">
@@ -19,7 +19,7 @@ const Card = () => {
             </div>
         </div>
         <div className="imgBx">
-            <img src={image} alt="" className='cover'/>
+            <img src={props.path} alt="" className='cover'/>
         </div>
         <div className='actionBtns'>
             <div className="left">
