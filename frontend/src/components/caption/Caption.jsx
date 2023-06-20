@@ -34,7 +34,7 @@ const Caption = () => {
                         </div>
                     </div>
                     <div>
-                        <Card/>
+                        <Card path={state.file_path}/>
                     </div>
                 </div>   
                 <button className='btn-style-page3'>Share</button>
@@ -46,7 +46,7 @@ const Caption = () => {
         <div className="footer-page3">
         </div>
         </section>
-        <CaptionPage path={state.file_path}></CaptionPage>
+        <CaptionPage></CaptionPage>
 
         
         
