@@ -7,6 +7,7 @@ import instagram from "../assets/icons/instagram.svg";
 import twitter from "../assets/icons/twitter.svg";
 import linkedin from "../assets/icons/linkedin.svg";
 import ChooseCaptionPage from '../assets/characters/ChooseCaptionPage';
+import { Circles } from "react-loader-spinner";
 
 
 const ChooseCaption = () => {
@@ -17,6 +18,7 @@ const ChooseCaption = () => {
     const [tone,setTone]=useState();
     const [caption,setcaption] =useState("");
     const navigate = useNavigate();
+    const [loading,setLoading] = useState(false);
     const fillColor = {
         fill:"blue",
     }
@@ -64,6 +66,7 @@ const ChooseCaption = () => {
         setplatformId(id);
     }
     const generateCaption = () =>{
+        setLoading(true);
         const context='';
         axios.get(`http://localhost:9000/generate_image_video_caption?caption_size=${selectSizeId}&context=${context}&style=${targetId}&num_hashtags=30&tone=${tone}&social_media=${platformId}`,{
             headers:{
@@ -71,9 +74,12 @@ const ChooseCaption = () => {
             },
             withCredentials: true
         }).then(res=>{
+            setLoading(false);
             setcaption(res.data.Caption);
             navigate("/caption",{state:{caption:res.data.Caption}})
+            
         }).catch(err=>{
+            setLoading(false);
             console.log(err);
         })
 
@@ -193,7 +199,17 @@ const ChooseCaption = () => {
                     </div>
                     </div>
                 </div>
-                <button className="btn-style-page2" style = {{border:"none"}} onClick ={generateCaption}>Generate Caption</button>
+                {loading?<div className="spinners">
+                    <Circles
+                      height="50"
+                      width="50"
+                      color="#1c4042"
+                      ariaLabel="circles-loading"
+                      wrapperStyle={{}}
+                      wrapperClass=""
+                      visible={true}
+                    ></Circles>
+                  </div>:<button className="btn-style-page2" style = {{border:"none"}} onClick ={generateCaption}>Generate Caption</button>}
            </div>
         </div>
         <div className="footer-page2">
