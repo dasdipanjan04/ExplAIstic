@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./ChooseCaption.css"
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import axios from "axios"
 import facebook from "../assets/icons/facebook.svg";
 import instagram from "../assets/icons/instagram.svg";
@@ -15,6 +15,8 @@ const ChooseCaption = () => {
     const [selectSizeId,setSelectsizeId] = useState();
     const [platformId, setplatformId] = useState();
     const [tone,setTone]=useState();
+    const [caption,setcaption] =useState("");
+    const navigate = useNavigate();
     const fillColor = {
         fill:"blue",
     }
@@ -69,7 +71,8 @@ const ChooseCaption = () => {
             },
             withCredentials: true
         }).then(res=>{
-            console.log(res);
+            setcaption(res.data.Caption);
+            navigate("/caption",{state:{caption:res.data.Caption}})
         }).catch(err=>{
             console.log(err);
         })
