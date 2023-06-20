@@ -90,6 +90,9 @@ section::before{
     border: none;
     padding:16px;
 }
+.caption::-webkit-scrollbar{
+    display: none;
+}
 .generated-caption{
     width:100%;
     height: 430px;
