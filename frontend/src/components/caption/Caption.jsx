@@ -6,7 +6,6 @@ import ChooseCaptionPage from '../assets/characters/ChooseCaptionPage';
 import CaptionPage from '../assets/characters/CaptionPage';
 const Caption = () => {
     const {state} = useLocation();
-
   return (
 
     <>
@@ -23,9 +22,7 @@ const Caption = () => {
         <section>
         <div className="content-page3">
             <div className="innerContent-page3">
-                <div className='innerContent-div'> 
-
-              
+                <div className='innerContent-div'>
                     <div className='text' >
                         <p className="steps-page3" >Step 3 :Share Your Caption</p>
                         <div className='generated-caption'>
@@ -36,11 +33,11 @@ const Caption = () => {
                     <div>
                         <Card path={state.file_path}/>
                     </div>
-                </div>   
+                </div>
                 <button className='btn-style-page3'>Share</button>
-                
+
            </div>
-           
+
 
         </div>
         <div className="footer-page3">

@@ -5,6 +5,7 @@ import image from "./image.jpeg";
 //import logo from "./logo.jpg";
 
 const Card = (props) => {
+    const relativePath = props.path.split('/public/')[1];
   return (
     <div className="card-page">
         <div className="top">
@@ -19,7 +20,7 @@ const Card = (props) => {
             </div>
         </div>
         <div className="imgBx">
-            <img src={props.path} alt="" className='cover'/>
+            <img src={`${process.env.PUBLIC_URL}/${relativePath}`} alt="" className='cover'/>
         </div>
         <div className='actionBtns'>
             <div className="left">
