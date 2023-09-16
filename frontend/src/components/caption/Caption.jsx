@@ -55,7 +55,7 @@ const Caption = () => {
     <div>
         <Navbar flag={true}/>
         <section>
-        <div className="content">
+        <div className="page3 content">
             <div className="innerContent-page3">
                 <div className='innerContent-div'> 
                     <div className='text' >
