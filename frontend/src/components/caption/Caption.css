@@ -6,6 +6,9 @@ body{
     
     
 }
+.page3{
+    min-height: 100vh;
+}
 .copy-text{
     font-size: 20px;
     text-align: center;
@@ -76,7 +79,9 @@ body{
     border: none;
     padding: 0.5rem;
     height:100% !important;
-    border-radius: 30px;
+    max-height: 10rem;
+    overflow-y:auto;
+    position: relative;
 }
 .utilities{
     display: flex;
@@ -119,7 +124,12 @@ section .footer-page3 {
         flex-direction: column;
     }
 }
-
+@media (max-width: 500px) {
+    .page3{
+         min-height: 200vh;
+    }
+    
+}
 @media (max-width: 460px) {
     .text{
         min-width: 20rem;
@@ -136,6 +146,6 @@ section .footer-page3 {
         min-width: 15rem;
     }
     .content{
-        min-height: 150vh;
+        min-height: 200vh;
     }
 }
