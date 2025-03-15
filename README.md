@@ -4,7 +4,7 @@
 
 ![ExplAIstic Logo](/src/resources/Background.png)
 
-ExplAIstic is an image captioning and image hashtagging application that generates nicely written captions and adds related hashtags to your images and reels. It utilizes pre-trained Imagenet models and ChatGPT for the image analysis and caption generation, and the Telegram API for the messaging feature.
+ExplAIstic is an image captioning and image hashtagging application that generates nicely written captions and adds related hashtags to your images and reels. It utilizes pre-trained Imagenet models and BLIP2/LLAMA for the image analysis and caption generation, and the Telegram API for the messaging feature.
 
 ## Installation 🚀
 
